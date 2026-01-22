@@ -144,3 +144,19 @@ a{ text-decoration: none; }
 section, header{
   scroll-margin-top: 90px; /* ajuste se sua navbar for maior/menor */
 }
+
+
+.btn-ig{
+  border: 1px solid rgba(21,57,47,.25);
+  color: var(--heading);
+  background: #fff;
+}
+
+.btn-ig:hover{
+  background: rgba(21,57,47,.06);
+}
+
+
+.btn-social-navbar{
+  padding: 6px 5px 6px 14px !important;
+}

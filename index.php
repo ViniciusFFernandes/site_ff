@@ -7,6 +7,7 @@ $contact = $site["contact"];
 $hero = $site["hero"];
 $sections = $site["sections"];
 $seo = $site["seo"];
+$social = $site["social"];  
 
 $colors = $brand["colors"];
 
@@ -73,13 +74,19 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
         <li class="nav-item"><a class="nav-link" href="#coleta-setores">Dias da Coleta</a></li>
         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
         <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-        <li class="nav-item ms-lg-2">
-          <button class="btn btn-ff px-4"
+        <li class="nav-item">
+          <button class="btn btn-ff btn-social-navbar px-4"
             data-wa-phone="<?= e($contact["phone_e164"]) ?>"
             data-wa-cta-msg="<?= e($contact["whatsapp_default_message"]) ?>">
-            <i class="bi bi-whatsapp me-2"></i><?= e($hero["primary_cta"]) ?>
+            <i class="bi bi-whatsapp me-2"></i>
           </button>
         </li>
+        <li class="nav-item">
+          <a class="btn btn-ff-outline btn-social-navbar" href="<?= e($social["instagram_url"]) ?>" target="_blank" rel="noopener">
+            <i class="bi bi-instagram me-2"></i>
+          </a>
+        </li>
+        
       </ul>
     </div>
   </div>
@@ -109,6 +116,9 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
         data-wa-cta-msg="<?= e($contact["whatsapp_default_message"]) ?>">
         <i class="bi bi-whatsapp me-2"></i><?= e($hero["primary_cta"]) ?>
       </button>
+      <a class="btn btn-ff-outline" href="<?= e($social["instagram_url"]) ?>" target="_blank" rel="noopener">
+        <i class="bi bi-instagram me-2"></i>Instagram
+      </a>
       <a class="btn btn-ff-outline w-100" href="#servicos"><i class="bi bi-grid-3x3-gap me-2"></i><?= e($hero["secondary_cta"]) ?></a>
     </div>
   </div>
@@ -136,8 +146,10 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
               data-wa-cta-msg="<?= e($contact["whatsapp_default_message"]) ?>">
               <i class="bi bi-whatsapp me-2"></i><?= e($hero["primary_cta"]) ?>
             </button>
-
-            <a class="btn btn-ff-outline px-4 py-2" href="#servicos">
+            <a class="btn btn-ff-outline px-4 py-2" href="<?= e($social["instagram_url"]) ?>" target="_blank" rel="noopener">
+              <i class="bi bi-instagram me-2"></i>Instagram
+            </a>
+            <a class="btn btn-ff-outline btn-hero-services px-4 py-2" href="#servicos">
               <i class="bi bi-arrow-down-circle me-2"></i><?= e($hero["secondary_cta"]) ?>
             </a>
           </div>
@@ -364,6 +376,10 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
         <div class="d-flex flex-wrap gap-2 mb-3">
           <a class="ff-mini-link" href="tel:<?= e($contact["phone_e164"]) ?>"><i class="bi bi-telephone"></i><?= e($contact["phone_display"]) ?></a>
           <a class="ff-mini-link" href="mailto:<?= e($contact["email"]) ?>"><i class="bi bi-envelope"></i><?= e($contact["email"]) ?></a>
+          <a class="ff-mini-link"
+            href="<?= e($social["instagram_url"]) ?>" target="_blank" rel="noopener">
+            <i class="bi bi-instagram me-2"></i>Acompanhe a FF no Instagram
+          </a>
         </div>
 
         <div class="ff-card p-4">

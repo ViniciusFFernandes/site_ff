@@ -63,3 +63,10 @@
   }
   
 }
+
+/* telas maiores que celular */
+@media (min-width: 768px){
+  .btn-hero-services{
+    display: none;
+  }
+}

@@ -37,6 +37,10 @@ $site = [
     "whatsapp_default_message" => "Olá! Gostaria de solicitar coleta e informações sobre materiais recicláveis.",
   ],
 
+  "social" => [
+    "instagram_url" => "https://www.instagram.com/f.fernandesr/"
+  ],
+
   "hero" => [
     "title" => "Coleta seletiva e reciclagem com responsabilidade",
     "subtitle" => "Atendemos Guararapes e região com coleta, separação e destinação correta de recicláveis. Parcerias com comércios, empresas e condomínios.",
