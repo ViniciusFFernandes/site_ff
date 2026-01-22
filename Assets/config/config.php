@@ -26,8 +26,8 @@ $site = [
   ],
 
   "contact" => [
-    "phone_display" => "(18) 99714-2083",
-    "phone_e164" => "5518997142083",
+    "phone_display" => "(18) 99115-4845",
+    "phone_e164" => "5518991154845",
     "email" => "contato@ffreciclagem.com.br",
     "email_alt" => "fabiano@ffreciclagem.com.br",
     "address" => "Guararapes • SP",
