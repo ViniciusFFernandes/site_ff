@@ -158,7 +158,8 @@ $site = [
           "neighborhoods" => [
             "Centro",
             "São Judas I e II",
-            "Jardim Palmeiras"
+            "Jardim Palmeiras",
+            "Frutal"
           ]
         ],
         [
@@ -189,7 +190,8 @@ $site = [
             "Jardim Continental",
             "Jardim Alvorada",
             "Cohab II",
-            "Jardim Satélite I e II"
+            "Jardim Satélite I e II",
+            "Porta do Sol"
           ]
         ]
       ]
@@ -197,7 +199,7 @@ $site = [
 
     "about" => [
       "title" => "Sobre a FFReciclagem",
-      "text" => "Somos uma empresa familiar focada em reciclagem e coleta seletiva. Nosso objetivo é facilitar a separação de recicláveis, orientar a comunidade e dar a destinação correta aos materiais — com compromisso com o meio ambiente e com a cidade.",
+      "text" => "Somos uma empresa familiar focada em reciclagem e coleta seletiva. Nosso objetivo é facilitar a separação de recicláveis, orientar a comunidade e dar a destinação correta aos materiais, com compromisso com o meio ambiente e com a cidade.",
       "highlights" => [
         ["icon" => "bi-shield-check", "title" => "Compromisso", "text" => "Trabalhamos com responsabilidade e transparência."],
         ["icon" => "bi-people", "title" => "Parcerias", "text" => "Atendimento para residências, comércios, empresas e escolas."],
