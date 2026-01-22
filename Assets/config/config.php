@@ -30,15 +30,16 @@ $site = [
     "phone_e164" => "5518991154845",
     "email" => "contato@ffreciclagem.com.br",
     "email_alt" => "fabiano@ffreciclagem.com.br",
-    "address" => "Guararapes • SP",
+    "address" => "Av. Tiradentes, 80 - Guararapes, SP, 16700-000",
     "hours" => "Segunda a Sexta — 07:00 às 17:00",
     "instagram" => "",
-    "maps_url" => "",
+    "maps_url" => "https://maps.app.goo.gl/ichs34oEZmowScZGA",
     "whatsapp_default_message" => "Olá! Gostaria de solicitar coleta e informações sobre materiais recicláveis.",
   ],
 
   "social" => [
-    "instagram_url" => "https://www.instagram.com/f.fernandesr/"
+    "instagram_url" => "https://www.instagram.com/f.fernandesr/",
+    "facebook_url" => "https://www.facebook.com/f.fernandes.fernandes.2025#"
   ],
 
   "hero" => [

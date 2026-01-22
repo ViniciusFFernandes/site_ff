@@ -61,12 +61,18 @@
   .ff-hero{
      padding: var(--hero-pad-y-mob) 0;
   }
-  
+  .btn-social-hero-face{
+    display: none;
+  }
 }
 
 /* telas maiores que celular */
 @media (min-width: 768px){
   .btn-hero-services{
     display: none;
+  }
+
+  .btn-social-hero-face{
+    padding: 8px 15px 8px 22px !important;
   }
 }

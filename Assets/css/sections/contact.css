@@ -26,3 +26,23 @@
     font-size: 13px;
   }
 }
+
+
+.btn-social{
+  padding: .5rem .9rem;
+  font-size: 13px;
+  border-radius: 999px;
+  border: 1px solid rgba(21,57,47,.18);
+  background: #fff;
+  color: var(--heading);
+  font-weight: 600;
+}
+
+.btn-social:hover{
+  background: rgba(21,57,47,.06);
+}
+
+.btn-social i{
+  font-size: 1rem;
+  opacity: .9;
+}

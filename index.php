@@ -86,6 +86,11 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
             <i class="bi bi-instagram me-2"></i>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="btn btn-ff-outline btn-social-navbar" href="<?= e($social["facebook_url"]) ?>" target="_blank" rel="noopener">
+            <i class="bi bi-facebook me-2"></i>
+          </a>
+        </li>
         
       </ul>
     </div>
@@ -119,6 +124,9 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
       <a class="btn btn-ff-outline" href="<?= e($social["instagram_url"]) ?>" target="_blank" rel="noopener">
         <i class="bi bi-instagram me-2"></i>Instagram
       </a>
+      <a class="btn btn-ff-outline" href="<?= e($social["facebook_url"]) ?>" target="_blank" rel="noopener">
+        <i class="bi bi-facebook me-2"></i>Facebook
+      </a>
       <a class="btn btn-ff-outline w-100" href="#servicos"><i class="bi bi-grid-3x3-gap me-2"></i><?= e($hero["secondary_cta"]) ?></a>
     </div>
   </div>
@@ -148,6 +156,9 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
             </button>
             <a class="btn btn-ff-outline px-4 py-2" href="<?= e($social["instagram_url"]) ?>" target="_blank" rel="noopener">
               <i class="bi bi-instagram me-2"></i>Instagram
+            </a>
+            <a class="btn btn-ff-outline btn-social-hero-face px-4 py-2" href="<?= e($social["facebook_url"]) ?>" target="_blank" rel="noopener">
+              <i class="bi bi-facebook me-2"></i><>
             </a>
             <a class="btn btn-ff-outline btn-hero-services px-4 py-2" href="#servicos">
               <i class="bi bi-arrow-down-circle me-2"></i><?= e($hero["secondary_cta"]) ?>
@@ -376,21 +387,9 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
         <div class="d-flex flex-wrap gap-2 mb-3">
           <a class="ff-mini-link" href="tel:<?= e($contact["phone_e164"]) ?>"><i class="bi bi-telephone"></i><?= e($contact["phone_display"]) ?></a>
           <a class="ff-mini-link" href="mailto:<?= e($contact["email"]) ?>"><i class="bi bi-envelope"></i><?= e($contact["email"]) ?></a>
-          <a class="ff-mini-link"
-            href="<?= e($social["instagram_url"]) ?>" target="_blank" rel="noopener">
-            <i class="bi bi-instagram me-2"></i>Acompanhe a FF no Instagram
-          </a>
         </div>
 
         <div class="ff-card p-4">
-          <div class="d-flex align-items-start gap-3">
-            <div class="service-icon" style="width:44px;height:44px"><i class="bi bi-geo-alt"></i></div>
-            <div>
-              <div class="fw-bold">Endereço</div>
-              <div class="text-muted-ff"><?= e($contact["address"]) ?></div>
-            </div>
-          </div>
-          <div class="ff-divider my-3"></div>
           <div class="d-flex align-items-start gap-3">
             <div class="service-icon" style="width:44px;height:44px"><i class="bi bi-clock"></i></div>
             <div>
@@ -398,7 +397,14 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
               <div class="text-muted-ff"><?= e($contact["hours"]) ?></div>
             </div>
           </div>
-
+          <div class="ff-divider my-3"></div>
+          <div class="d-flex align-items-start gap-3">
+            <div class="service-icon" style="width:44px;height:44px"><i class="bi bi-geo-alt"></i></div>
+            <div>
+              <div class="fw-bold">Endereço</div>
+              <div class="text-muted-ff"><?= e($contact["address"]) ?></div>
+            </div>
+          </div>
           <?php if(!empty($contact["maps_url"])): ?>
             <div class="pt-3">
               <a class="btn btn-ff-outline w-100" target="_blank" rel="noopener" href="<?= e($contact["maps_url"]) ?>">
@@ -407,7 +413,19 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
             </div>
           <?php endif; ?>
         </div>
-      </div>
+
+        <div class="ff-card p-3 mt-3">
+          <div class="small text-muted-ff mb-2">Acompanhe a FF nas redes sociais</div>
+            <div class="d-grid d-sm-flex gap-2">
+              <a class="btn btn-social btn-ig" href="..." target="_blank" rel="noopener">
+                <i class="bi bi-instagram me-2"></i>Instagram
+              </a>
+              <a class="btn btn-social btn-fb" href="..." target="_blank" rel="noopener">
+                <i class="bi bi-facebook me-2"></i>Facebook
+              </a>
+            </div>
+          </div>
+        </div>
 
       <div class="col-lg-7">
         <div class="ff-contact-card p-4 p-md-5">
