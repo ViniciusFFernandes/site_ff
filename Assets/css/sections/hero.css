@@ -1,0 +1,65 @@
+/* HERO */
+.ff-hero{
+  padding: var(--hero-pad-y) 0;
+  background:
+    radial-gradient(900px 260px at 50% 0%, color-mix(in srgb, var(--brand) 20%, transparent), transparent 60%),
+    linear-gradient(180deg, var(--bg-soft) 0%, #fff 70%);
+}
+
+.ff-hero .hero-card{
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius-xl) + 4px);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 18px 50px var(--shadow);
+}
+
+.ff-hero .hero-media{
+  background:
+    radial-gradient(600px 220px at 20% 10%, color-mix(in srgb, var(--accent) 25%, transparent), transparent 60%),
+    radial-gradient(700px 300px at 70% 40%, color-mix(in srgb, var(--brand) 18%, transparent), transparent 65%);
+}
+.ff-hero img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ff-hero .hero-points li{
+  margin-bottom: .4rem;
+}
+
+.ff-hero .hero-card{
+  position: relative;
+  overflow: hidden;
+}
+
+/* Coluna com imagem */
+.ff-hero .hero-bg{
+  min-height: 100%;
+  background-image:
+    linear-gradient(
+      to left,
+      rgba(30, 122, 58, 0.55),
+      rgba(30, 122, 58, 0.25),
+      rgba(30, 122, 58, 0.05)
+    ),
+    url("../../img/img_1.jpg"); /* sua foto real */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Mobile: imagem vai para o topo */
+@media (max-width: 991px){
+  .ff-hero .hero-bg{
+    min-height: 240px;
+    background-position: center 30%;
+  }
+}
+
+@media (max-width: 768px){
+  .ff-hero{
+     padding: var(--hero-pad-y-mob) 0;
+  }
+  
+}

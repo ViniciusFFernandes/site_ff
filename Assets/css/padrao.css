@@ -1,0 +1,146 @@
+
+/* =====================================
+   FFReciclagem — Padrão (base)
+   Edite as cores em Assets/config/config.php
+   ===================================== */
+
+:root{
+  --brand: #1E7A3A;
+  --brand-dark: #0F3D1E;
+  --accent: #F2B705;
+
+  --bg: #ffffff;
+  --bg-soft: #F6FBF7;
+
+  --text: #1F2933;
+  --muted: #667085;
+
+  --border: #E7EEE9;
+  --shadow: rgba(0,0,0,.08);
+
+  --radius-xl: 18px;
+  --radius-lg: 14px;
+
+  --container-max: 1140px;
+
+  --section-pad-y: 76px;
+  --hero-pad-y: 86px;
+
+  --section-pad-y-mob: 56px;
+  --hero-pad-y-mob: 36px;
+}
+
+html{ scroll-behavior: smooth; }
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a{ text-decoration: none; }
+
+.container-max{
+  max-width: var(--container-max);
+}
+
+/* Botões */
+.btn-ff{
+  --bs-btn-bg: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-bg: color-mix(in srgb, var(--brand) 90%, #000 10%);
+  --bs-btn-hover-border-color: color-mix(in srgb, var(--brand) 90%, #000 10%);
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  border-radius: 999px;
+  box-shadow: 0 10px 30px var(--shadow);
+}
+.btn-ff-outline{
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--brand-dark);
+}
+.btn-ff-outline:hover{
+  border-color: color-mix(in srgb, var(--brand) 45%, var(--border));
+  background: var(--bg-soft);
+}
+
+/* Chips / badges */
+.ff-chip{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .45rem .75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+/* Títulos */
+.ff-kicker{
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--brand);
+  font-weight: 700;
+  font-size: .8rem;
+}
+.ff-title{
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: var(--brand-dark);
+}
+
+/* Cards */
+.ff-card{
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 12px 35px var(--shadow);
+}
+
+/* Seções */
+.ff-section{
+  padding: var(--section-pad-y) 0;
+}
+.ff-section.bg-soft{
+  background: var(--bg-soft);
+}
+.ff-divider{
+  height: 1px;
+  background: var(--border);
+}
+
+/* Navbar */
+.navbar{
+  backdrop-filter: blur(8px);
+}
+.navbar .nav-link{
+  color: var(--brand-dark);
+  font-weight: 600;
+}
+.navbar .nav-link:hover{
+  color: var(--brand);
+}
+
+/* Helpers */
+.text-muted-ff{ color: var(--muted) !important; }
+.border-ff{ border-color: var(--border) !important; }
+.rounded-ff{ border-radius: var(--radius-xl) !important; }
+
+/* Acessibilidade */
+:focus-visible{
+  outline: 3px solid color-mix(in srgb, var(--accent) 55%, #fff);
+  outline-offset: 2px;
+}
+
+
+@media (max-width: 768px){
+  .ff-section{
+    padding: var(--section-pad-y-mob) 0;
+  }
+}
+
+/* Evita que a navbar sticky cubra o topo das seções ao navegar por âncoras */
+section, header{
+  scroll-margin-top: 90px; /* ajuste se sua navbar for maior/menor */
+}

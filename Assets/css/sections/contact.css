@@ -1,0 +1,28 @@
+/* CONTACT */
+.ff-contact-card{
+  border-radius: calc(var(--radius-xl) + 6px);
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: 0 18px 50px var(--shadow);
+}
+.ff-mini-link{
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .45rem .75rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--brand-dark);
+}
+.ff-mini-link:hover{
+  background: var(--bg-soft);
+  color: var(--brand);
+}
+
+
+/* Mobile */
+@media (max-width: 768px){
+  .ff-contact-card .text-muted-ff{
+    font-size: 13px;
+  }
+}

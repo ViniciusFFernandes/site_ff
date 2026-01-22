@@ -1,0 +1,12 @@
+/* SERVICES */
+.service-icon{
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--brand) 10%, #fff);
+  border: 1px solid var(--border);
+  color: var(--brand);
+  font-size: 1.4rem;
+}

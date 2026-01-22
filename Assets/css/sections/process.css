@@ -1,0 +1,12 @@
+/* PROCESS */
+.step-icon{
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--accent) 18%, #fff);
+  border: 1px solid var(--border);
+  color: color-mix(in srgb, var(--brand-dark) 75%, #000);
+  font-size: 1.25rem;
+}
