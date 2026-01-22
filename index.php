@@ -127,7 +127,7 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
       <a class="btn btn-ff-outline" href="<?= e($social["facebook_url"]) ?>" target="_blank" rel="noopener">
         <i class="bi bi-facebook me-2"></i>Facebook
       </a>
-      <a class="btn btn-ff-outline w-100" href="#servicos"><i class="bi bi-grid-3x3-gap me-2"></i><?= e($hero["secondary_cta"]) ?></a>
+      <!-- <a class="btn btn-ff-outline w-100" href="#servicos"><i class="bi bi-grid-3x3-gap me-2"></i><?// e($hero["secondary_cta"]) ?></a> -->
     </div>
   </div>
 </div>
@@ -158,7 +158,7 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
               <i class="bi bi-instagram me-2"></i>Instagram
             </a>
             <a class="btn btn-ff-outline btn-social-hero-face px-4 py-2" href="<?= e($social["facebook_url"]) ?>" target="_blank" rel="noopener">
-              <i class="bi bi-facebook me-2"></i><>
+              <i class="bi bi-facebook me-2"></i>
             </a>
             <a class="btn btn-ff-outline btn-hero-services px-4 py-2" href="#servicos">
               <i class="bi bi-arrow-down-circle me-2"></i><?= e($hero["secondary_cta"]) ?>
