@@ -75,4 +75,20 @@
   .btn-social-hero-face{
     padding: 8px 15px 8px 22px !important;
   }
+
+  .hero-title{
+    font-size: 1.6rem;   /* antes devia estar ~2rem+ */
+    line-height: 1.25;
+  }
+
+  .hero-text{
+    font-size: .95rem;
+    line-height: 1.5;
+  }
+
+  .hero-badges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
 }

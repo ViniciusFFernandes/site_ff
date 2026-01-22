@@ -215,17 +215,10 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
 <section id="materiais" class="ff-section bg-soft">
   <div class="container container-max">
     <div class="row align-items-end g-3 mb-4">
-      <div class="col-lg-8">
+      <div class="col-12">
         <!-- <div class="ff-kicker"><?// e($sections["materials"]["title"]) ?></div> -->
         <h2 class="ff-title h1 mb-2"><?= e($sections["materials"]["title"]) ?></h2>
         <p class="text-muted-ff mb-0"><?= e($sections["materials"]["subtitle"]) ?></p>
-      </div>
-      <div class="col-lg-4 text-lg-end">
-        <button class="btn btn-ff-outline px-4"
-          data-wa-phone="<?= e($contact["phone_e164"]) ?>"
-          data-wa-cta-msg="Olá! Tenho dúvidas sobre quais materiais vocês aceitam.">
-          <i class="bi bi-question-circle me-2"></i>Tirar dúvida
-        </button>
       </div>
     </div>
 
@@ -245,6 +238,19 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
         </div>
       </div>
       <?php endforeach; ?>
+    </div>
+    <div class="row align-items-end g-3 mb-4 mt-1">
+      <div class="col-lg-8">
+        <!-- <div class="ff-kicker"><?// e($sections["materials"]["title"]) ?></div> -->
+        <p class="text-muted-ff mb-0"><?= e($sections["materials"]["txtQuestion"]) ?></p>
+      </div>
+      <div class="col-lg-4 text-lg-end text-center">
+        <button class="btn btn-ff-outline px-4"
+          data-wa-phone="<?= e($contact["phone_e164"]) ?>"
+          data-wa-cta-msg="Olá! Tenho dúvidas sobre quais materiais vocês aceitam.">
+          <i class="bi bi-question-circle me-2"></i>Tirar dúvida
+        </button>
+      </div>
     </div>
   </div>
 </section>

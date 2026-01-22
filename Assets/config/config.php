@@ -43,8 +43,8 @@ $site = [
   ],
 
   "hero" => [
-    "title" => "Coleta seletiva e reciclagem com responsabilidade",
-    "subtitle" => "Atendemos Guararapes e região com coleta, separação e destinação correta de recicláveis. Parcerias com comércios, empresas e condomínios.",
+    "title" => "Coleta seletiva com responsabilidade",
+    "subtitle" => "Atendemos Guararapes e região com coleta e destinação correta de recicláveis.",
     "primary_cta" => "Chamar no WhatsApp",
     "secondary_cta" => "Ver serviços",
     "image" => "Assets/img/img_1.jpg",
@@ -80,7 +80,8 @@ $site = [
 
     "materials" => [
       "title" => "Materiais aceitos",
-      "subtitle" => "Tem dúvida sobre algum material? Fale com a gente no WhatsApp e receba orientação rápida.",
+      "subtitle" => "A lista pode variar conforme o material e o volume.",
+      "txtQuestion" => "Tem dúvida sobre algum material? Fale com a gente no WhatsApp e receba orientação rápida.",
       "columns" => [
         [
           "title" => "Papel e papelão",
@@ -102,7 +103,7 @@ $site = [
     ],
 
     "process" => [
-      "title" => "Como funciona a coleta mediante agendamento",
+      "title" => "Agendamento para coleta",
       "subtitle" => "Para itens grandes, volumes elevados e coletas em empresas ou indústrias.",
       "steps" => [
         [
@@ -129,7 +130,7 @@ $site = [
     ],
 
     "schedule" => [
-      "title" => "Coleta seletiva por setor e dia da semana",
+      "title" => "Setores e dias da semana",
       "subtitle" => "A coleta passa diariamente nos bairros de Guararapes, conforme o setor.",
       "days" => [
         [
