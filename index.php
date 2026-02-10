@@ -423,10 +423,10 @@ function e($v){ return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); }
         <div class="ff-card p-3 mt-3">
           <div class="small text-muted-ff mb-2">Acompanhe a FF nas redes sociais</div>
             <div class="d-grid d-sm-flex gap-2">
-              <a class="btn btn-social btn-ig" href="..." target="_blank" rel="noopener">
+              <a class="btn btn-social btn-ig" href="<?= e($social["instagram_url"]) ?>" target="_blank" rel="noopener">
                 <i class="bi bi-instagram me-2"></i>Instagram
               </a>
-              <a class="btn btn-social btn-fb" href="..." target="_blank" rel="noopener">
+              <a class="btn btn-social btn-fb" href="<?= e($social["facebook_url"]) ?>" target="_blank" rel="noopener">
                 <i class="bi bi-facebook me-2"></i>Facebook
               </a>
             </div>
